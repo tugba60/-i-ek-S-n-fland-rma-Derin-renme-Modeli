@@ -25,7 +25,7 @@ CNN tabanlı bir model kullanarak Kaggle platformunda yer alan flowers-dataset v
 
 ## Sonuçlar
 * Modeli eğitirken farklı epoch ve batch size değerleri denedim ancak sistemle ilgili sorunlar nedeni ile her denememi görsel olarak gösteremedim.
-* Modelimizin başarısına gelecek olursak %60 - %70 civarı başarı oranı yakaladığım hiperparametre değerleri oldu ancak zaman kısıtından dolayı daha faazla deneyimleyemedim. Modelde kullandığım hiperparametre ayarlarını değiştirerek hatta gerek olursa yeni katmanlar ekleyerek bu başarı oranını arttırmayı hedefliyorum. Projeyi githuba yükledim ancak **proje üzerinde çalışmalarım devam edecektir.**
+* Modelimizin başarısına gelecek olursak %55 - %60 civarı başarı oranı yakaladığım hiperparametre değerleri oldu ancak zaman kısıtından dolayı daha faazla deneyimleyemedim. Modelde kullandığım hiperparametre ayarlarını değiştirerek hatta gerek olursa yeni katmanlar ekleyerek bu başarı oranını arttırmayı hedefliyorum. Projeyi githuba yükledim ancak **proje üzerinde çalışmalarım devam edecektir.**
 
 ## Modelde Geliştirilebilecek Yönler
 * Farklı hipermatre ayarlamaları yapılabilir. (learning rate düşürme gibi, daha fazla conv2d katmanı ekleme gibi, batch & epoch değeri arttırma gibi)
