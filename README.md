@@ -2,7 +2,7 @@
 CNN tabanlı bir model kullanarak Kaggle platformunda yer alan flowers-dataset veri setindeki çiçek türlerini tahmin eden model geliştirildi.
 
 ## Projenin Amacı
-* Akbank Derin Öğrenmeye Giriş Bootcamp'i eğitimi gereği CNN tabanlı bir proje geliştirmek. Projeyi Kaggle'dan da görüntüleyebilirsiniz: []
+* Akbank Derin Öğrenmeye Giriş Bootcamp'i eğitimi gereği CNN tabanlı bir proje geliştirmek. Projeyi Kaggle'dan da görüntüleyebilirsiniz: [https://www.kaggle.com/code/tugbakaratas/cnnproject]
 * Kaggle platformunda yer alan flowers-dataset kapsamında yer alan çiçek resimlerini daisy, dandelon, rose, sunflower, tulip olmak üzere 5 kategoriye sınıflandırma yapabilen bir derin öğrenme modeli geliştirmek.
 
 ## Veri Seti
@@ -21,8 +21,8 @@ CNN tabanlı bir model kullanarak Kaggle platformunda yer alan flowers-dataset v
 * **One-Hot Encoding**: to_categorical ile etiketleri vektör haline getirdim.
 * Eğitim sırasında veri çeşitliliği oluşturması için **ImageDataGenerator** kullandım.
 * Callbacks için de **EarlyStopping**: *Val_loss artarsa eğitim durur, en iyi ağırlıkları geri yükler.* ve **ReduceLROnPlateau**: *Val_loss iyileşmezse learning rate’i düşürür.* kullandım.
+* Modeli eğitirken Google Colab ortamından yardım aldım güçlü GPU ve TPU desteği ile bu süreci daha iyi yönettim.
 
 ## Sonuçlar
-*
-
-Amaç: daha hızlı ve stabil eğitim
+* Modeli eğitirken farklı epoch ve batch size değerleri denedim ancak sistemle ilgili sorunlar nedeni ile her denememi görsel olarak gösteremedim.
+* Modelimizin başarısına gelecek olursak 
