@@ -10,7 +10,8 @@ CNN tabanlı bir model kullanarak Kaggle platformunda yer alan flowers-dataset v
 * Bu veri setinde iki adet klasör bulunmaktadır. Bu klasörlerden biri train veri seti diğeri ise test veri seti olarak adlandırılmıştır. test klasöründeki .jpg uzantılı resimler etiketli değildir ancak train klasörü içinde 5 adet farklı adlarda klasör daha bulunmaktadır. Bu klasörün isimleri aynı zamanda bizim etiket isimlerimiz olmakla birlikte şöyledir: daisy, dandelon, rose, sunflower, tulip. Bu alt klasörler içinde de klasör isimleri ile aynı kategoride yer alan .jpg uzantılı resimler bulunmaktadır.
 * Oluşturduğum CNN modeli kapsamında test veri seti için test klasörünü, train ve valisyon için de train klasöründeki etiketli verileri %20 validasyon, %80 train olmak üzere ayırdım ve kullandım.
 * Bu resim verilerini numpy kütüphanesini kullanarak numpy arrayine çevirdim daha sonra her piksel 0-255 arasında değere sahip olduğunda modeli daha iyi eğitmek için normalizayon yapıp bu değerleri 0-1 arasına indirgedim. Resim boylarını da sabit bir boyut belirleyip (160,160) yaptım.
-* ![Veri setinde bulunan bazı resim örnekleri](Ekran görüntüsü 2025-09-26 223411.png)
+* ![Veri setinde bulunan bazı resim örnekleri](pictures.png)
+* ![Veri setinin labellara göre dağılımı](labels.png)
 
 
 ## Kullanılan Yöntemler
@@ -24,6 +25,7 @@ CNN tabanlı bir model kullanarak Kaggle platformunda yer alan flowers-dataset v
 * Eğitim sırasında veri çeşitliliği oluşturması için **ImageDataGenerator** kullandım.
 * Callbacks için de **EarlyStopping**: *Val_loss artarsa eğitim durur, en iyi ağırlıkları geri yükler.* ve **ReduceLROnPlateau**: *Val_loss iyileşmezse learning rate’i düşürür.* kullandım.
 * Modeli eğitirken Google Colab ortamından yardım aldım güçlü GPU ve TPU desteği ile bu süreci daha iyi yönettim.
+* ![Test, train, validasyon dağılımı öncesi ve sonrası](test_train_val.png)
 
 ## Sonuçlar
 * Modeli eğitirken farklı epoch ve batch size değerleri denedim ancak sistemle ilgili sorunlar nedeni ile her denememi görsel olarak gösteremedim.
